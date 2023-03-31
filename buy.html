@@ -1,0 +1,132 @@
+<html>
+<head>
+	<title>
+		Buy Cats online
+	</title>
+		<link rel="stylesheet" href="css/first.css">
+	
+
+    <link rel="stylesheet" href="all.css">
+		
+	</head>
+      
+	<body bgcolor="black">
+		<div id="page_container">
+			
+			<div id="page_header">
+				<div id="website_title">
+					<div id="title">
+						Buy cats online
+					</div>
+					<div id="salgon">
+						The best service at the lowest price</div>
+				</div>
+			</div>
+			<div id="page_banner">
+				<div id="page_menu">
+					<ul>
+			<li><a href="index.html" >Home</a></li>  
+			<li>	<a href="test.html">Gallery</a></li>  
+			<li> <a href="Aboutus.html">About us</a> </li> 
+			<li><a href="buy.html" class="current">Buy</a> </li> 
+			<li><a href="mail.html" class="last">Email us</a> </li>
+	<div>
+			<div class="dropdown">
+          <span><li><a href="index.html" class="last">Share</a> </li> </span>
+      <div class="dropdown-content">
+        <ol>
+		<li><a href="facebook.html"> Facebook</a></li>
+		<li><a href="facebook.html"> instagram </a></li>
+		<li><a href="facebook.html"> Telegram </a></li>	
+	</ol>
+  </div><br><br>
+</div>
+</div>
+	</ul>	
+    </div>
+    <div class="form">
+    <form onsubmit="return check()"  action="buy.php" method="POST" class="form-login">
+
+        <div class="form-white-background">
+        
+        <div class="form-title-row">
+            <h1>Buy Cat</h1>
+        </div>
+        
+        <div class="form-row">
+            <label>
+                <span>First Name</span>
+                <input type="text" name="fname" required>
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Last Name</span>
+                <input type="text" name="lname" required>
+            </label>
+        </div>
+        
+        </div><div class="form-row">
+            <label>
+                <span>Phone Number</span>
+                <input type="text" name="pno" id="pno" required>
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <label>
+                <span>Where city are u located in?  </span>
+            <select name="city" required>
+            <option selected> Mekele
+            <option> Maychew
+            <option> Wukro
+            <option>Adigrat
+            <option>Shire
+           <option> Axum
+            </select> 
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Home Address</span>
+                <input type="text" name="adress" id="add" required>
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Enter the code of the cat you want to buy.</span>
+            <select name="Code" required>
+            <option selected>11
+            <option> 22
+            <option> 33
+            <option>44
+            <option>19
+            <option>99
+           <option>111
+            </select> 
+            </label>
+        </div>
+     
+            <div class="form-row">
+            <button type="submit">Buy</button>&nbsp;&nbsp;&nbsp;&nbsp<button type="reset">Reset</button>
+        </div>  
+        <font color="red" size="1">NB:You can get the code of the cat you want by watching it in the gallery field. Each cat has their own code.  </font>      
+          
+            </form>
+            
+            <script>
+             function  check(){
+                var ch=document.getElementById("pno");
+                
+                if (ch.value<0){
+                    alert("Phone number cant be negative");
+                    return false;
+                }}
+            </script> 
+        
+        </div> 
+		</div>
+		</div>
+
+	</body>
+</html>
